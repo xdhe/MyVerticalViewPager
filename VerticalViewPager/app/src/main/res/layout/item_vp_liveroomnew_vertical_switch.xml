@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_liveroom_blurebg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon1" />
+
+        <com.verticalviewpager.xiaodong.verticalviewpager.HorizatialSlideFrameLayout
+            android:id="@+id/mHorizatialSlideFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bimg_liveroom_gifts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/liveroom_button_gifts_normal" />
+
+                <ImageView
+                    android:id="@+id/bimg_liveroom_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="39dp"
+                    android:src="@drawable/liveroom_button_share_normal" />
+
+                <android.support.v7.widget.ButtonBarLayout
+                    android:id="@+id/bimg_liveroom_switch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/liveroom_button_timing_normal" />
+            </RelativeLayout>
+        </com.verticalviewpager.xiaodong.verticalviewpager.HorizatialSlideFrameLayout>
+    </FrameLayout>
+</LinearLayout>
